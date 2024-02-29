@@ -1,0 +1,63 @@
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV website</title>
+    <link rel="stylesheet" href="Mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="CVCV.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mincv.html" class="active">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>CV</h1>
+
+    <h2>Education</h2>
+    <ul id="education"></ul>
+
+    <h3>Workplaces</h3>
+    <ul id="work_experience"></ul>
+
+    <h4>References</h4>
+    <ul id="references"></ul>
+
+    <script>
+        fetch('CVCV.json')
+            .then(response => response.json())
+            .then(data => {
+                const educationList = document.getElementById('education');
+                data.education.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = item.qualification || `${item.course} - Grade ${item.grade}`;
+                    educationList.appendChild(listItem);
+                });
+
+                const workExperienceList = document.getElementById('work_experience');
+                data.work_experience.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = item.company;
+                    workExperienceList.appendChild(listItem);
+                });
+
+                const referencesList = document.getElementById('references');
+                data.references.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${item.company} ${item.phone ? '- Phone: ' + item.phone : ''}`;
+                    referencesList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching CVCV:', error));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: red;
+}
+
+h1 {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-btn {
+    display: none;
+}
+
+.info-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-button:hover {
+    background-color: #45a049;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+.modal-btn:checked ~ .modal {
+    display: block;
+}
+
+.modal-btn:checked ~ .modal .modal-content {
+    display: block;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: 48%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+nav ul {
+    padding: 10px 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px; 
+}
+
+.project {
+    width: 48%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    margin: 10% auto;
+    text-align: center;
+}
+
+#invisible-button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: hotpink;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 60px;
+}

@@ -1,0 +1,32 @@
+{
+  "education": [
+    {
+      "qualification": "High school qualification"
+    },
+    {
+      "course": "Programing 1"
+    },
+    {
+      "subject": "English",
+      "grade": "7"
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "Rik Assistans"
+    },
+    {
+      "company": "Härnösands Kommun"
+    }
+  ],
+  "references": [
+    {
+      "company": "Bemaningsenheten, Härnösands kommun"
+    },
+    {
+      "company": "RIK assistans",
+      "phone": "0000-00000"
+    }
+  ]
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV website</title>
+    <link rel="stylesheet" href="Mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mincv.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <img id="contact-image" src="https://images.unsplash.com/photo-1525598912003-663126343e1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Phone" width="1200" height="800">
+
+    <h1>Contact information</h1>
+    <p>Mobile number: +46730833221.</p>
+
+    <script>
+        var contactImage = document.getElementById('contact-image');
+        
+        contactImage.addEventListener('click', function() {
+            document.body.style.backgroundColor = 'lightblue';
+        });
+    </script>
+
+<div id="myModal" class="modal">
+    <p>ELIT!</p>
+</div>
+
+</body>
+</html>

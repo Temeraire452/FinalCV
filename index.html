@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV website</title>
+    <link rel="stylesheet" href="Mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="CVCV.js" defer></script>
+
+   
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mincv.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to Fridas CV website</h1>
+    <p>This is a webpage with Fridas CV and everything else you might need.</p>
+
+    <button id="invisible-button" style="position: fixed; top: 20px; right: 20px; opacity: 0;">Invisible Button</button>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var invisibleButton = document.getElementById("invisible-button");
+    var isBackgroundPurple = false;
+
+    invisibleButton.addEventListener("click", function() {
+        if (isBackgroundPurple) {
+            document.body.style.backgroundColor = 'white';
+        } else {
+            document.body.style.backgroundColor = '#f0e6fa';
+        }
+
+        isBackgroundPurple = !isBackgroundPurple;
+    });
+});
+    </script>
+
+</body>
+</html>

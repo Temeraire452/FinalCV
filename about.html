@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV website</title>
+    <link rel="stylesheet" href="Mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="mincv.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>About</h1>
+    <p>My name is Frida Eriksson, I am 32 years old and currently working for Härnösands Kommun as nursing staff.
+         I live in a apartment with my two cats and spend alot of my free time by the computer or with family. I like coding alot more than I like designing, something that might show in this webpage.
+    </p>
+
+    <p>
+        In my youth i worked as a waitress in a restaurant and in 2010 i started working for the domestic service in Härnölsands kommun. 
+        In 2012 I got a jobb at RIK assistans as a personal assistant taking care of children with disabilities. 
+        2017 I started working at Älandsgården as nursing staff and I am still working there now, while studing system development.
+    </p>
+
+    <div id="myModal" class="modal">
+        <p>ELIT!</p>
+    </div>
+
+    <script>
+        var easterEggSequence = "";
+        
+        document.addEventListener("keydown", function(event) {
+            var key = event.key;
+            easterEggSequence += key;
+    
+            if (easterEggSequence === "1337") {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "block";
+    
+                setTimeout(function() {
+                    easterEggSequence = "";
+                    modal.style.display = "none";
+                }, 2000);
+            } else if (easterEggSequence.length > 4) {
+                easterEggSequence = "";
+            }
+        });
+    </script>
+
+</body>
+</html>
